@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gokul P — Cybersecurity Professional</title>
+  <style>
+    :root{
+      --bg:#0f1724; /* dark navy */
+      --card:#0b1220;
+      --accent:#00a8ff;
+      --muted:#9aa8bd;
+      --glass: rgba(255,255,255,0.03);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,var(--bg),#071018);color:#e6eef6;line-height:1.45}
+    .container{max-width:960px;margin:48px auto;padding:28px}
+    .card{background:var(--card);border-radius:14px;padding:28px;box-shadow:0 6px 24px rgba(2,6,23,0.6);}
+    header{display:flex;gap:20px;align-items:center}
+    .avatar{width:96px;height:96px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#7afcff);display:flex;align-items:center;justify-content:center;font-weight:700;color:#042033;font-size:28px}
+    h1{margin:0;font-size:22px}
+    .subtitle{color:var(--muted);margin-top:6px;font-size:14px}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:20px;margin-top:22px}
+    .section{background:var(--glass);padding:18px;border-radius:12px}
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .chip{padding:8px 10px;border-radius:999px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.04);font-size:13px}
+    ul{padding-left:18px;margin:12px 0}
+    .meta{font-size:14px;color:var(--muted)}
+    .contact a{color:var(--accent);text-decoration:none}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,var(--accent),#46e6ff);color:#02222f;font-weight:600;text-decoration:none}
+    footer{margin-top:18px;color:var(--muted);font-size:13px;text-align:center}
+    @media (max-width:880px){.grid{grid-template-columns:1fr;}.avatar{width:80px;height:80px;font-size:22px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <header>
+        <div class="avatar">GP</div>
+        <div>
+          <h1>Gokul P — Cybersecurity Professional</h1>
+          <div class="subtitle">Security Engineer • Penetration Tester • Incident Responder</div>
+          <div class="meta">Passionate about building secure systems, threat hunting, and turning complex security problems into repeatable defenses.</div>
+        </div>
+      </header>
+
+      <div class="grid">
+        <main>
+          <section class="section" aria-labelledby="about">
+            <h2 id="about">About Me</h2>
+            <p>I'm a results-driven cybersecurity professional with experience securing cloud-native applications, conducting penetration tests, and responding to incidents. I combine strong fundamentals in networking and systems with hands-on experience in offensive and defensive security to reduce risk and harden infrastructure.</p>
+          </section>
+
+          <section class="section" aria-labelledby="experience" style="margin-top:14px">
+            <h2 id="experience">Experience Highlights</h2>
+            <ul>
+              <li><strong>Security Engineer:</strong> Designed and implemented endpoint and network detection rules, automated threat hunting playbooks, and remediation workflows.</li>
+              <li><strong>Penetration Testing:</strong> Performed internal and external web app and API pentests, produced executive-level risk reports and developer-focused remediation guidance.</li>
+              <li><strong>Incident Response:</strong> Led triage and root-cause investigations for live incidents, coordinated containment and recovery, and performed post-incident reviews.</li>
+            </ul>
+          </section>
+
+          <section class="section" aria-labelledby="projects" style="margin-top:14px">
+            <h2 id="projects">Selected Projects</h2>
+            <ul>
+              <li><strong>Cloud Threat Model &amp; Remediation:</strong> Created threat models for critical services on AWS and implemented least-privilege IAM policies and CI/CD pipeline checks.</li>
+              <li><strong>Purple Team Exercise:</strong> Ran adversary emulation exercises to validate detections and improve SOC playbooks, decreasing mean time to detect (MTTD).</li>
+              <li><strong>Automation Toolkit:</strong> Built scripts to automate alert triage, enrich telemetry with contextual data, and reduce analyst workload.</li>
+            </ul>
+          </section>
+
+          <section class="section" aria-labelledby="approach" style="margin-top:14px">
+            <h2 id="approach">My Approach</h2>
+            <p>I follow a pragmatic approach: (1) Understand the business context and the crown jewels, (2) prioritize risks by impact and exploitability, (3) implement layered defenses, and (4) measure effectiveness through metrics and red-team exercises. Clear communication and developer-friendly guidance are core to my practice.</p>
+          </section>
+        </main>
+
+        <aside>
+          <section class="section contact" aria-labelledby="contact">
+            <h3 id="contact">Contact</h3>
+            <p class="meta">Email: <a href="mailto:gokul@example.com">gokul@example.com</a></p>
+            <p class="meta">Location: Chennai, India</p>
+            <p style="margin-top:10px"><a class="btn" href="#contact">Get in touch</a></p>
+          </section>
+
+          <section class="section" style="margin-top:14px" aria-labelledby="skills">
+            <h3 id="skills">Skills & Tools</h3>
+            <div class="skills" role="list">
+              <span class="chip">Penetration Testing</span>
+              <span class="chip">Vulnerability Assessment</span>
+              <span class="chip">Incident Response</span>
+              <span class="chip">Threat Hunting</span>
+              <span class="chip">SIEM (Splunk/ELK)</span>
+              <span class="chip">Cloud Security (AWS/Azure)</span>
+              <span class="chip">Scripting (Python/Bash)</span>
+              <span class="chip">OWASP Top 10</span>
+            </div>
+          </section>
+
+          <section class="section" style="margin-top:14px" aria-labelledby="certs">
+            <h3 id="certs">Certifications</h3>
+            <ul>
+              <li>Certified Ethical Hacker (CEH) — if applicable</li>
+              <li>CompTIA Security+ — if applicable</li>
+              <li>OSCP / eJPT / CISSP — if applicable</li>
+            </ul>
+          </section>
+        </aside>
+      </div>
+
+      <footer>
+        <small>Want this tailored more to a resume, LinkedIn summary, or a short elevator pitch? Tell me which and I'll update it.</small>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
